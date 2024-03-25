@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notizie</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Notizie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" data-category="us">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="sport">Sport</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="business">Economia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="science">Scienza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="favoritesLink">Preferiti</a>
+          </li>
+        </ul>
+        
+          <form class="d-flex align-items-center" role="search" id="searchForm">
+            <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search" id="txtsearch">
+            <button class="btn btn-outline-success" type="submit" id="btnsearch">Cerca</button>
+          </form>
+        
+      </div>
+    </div>
+  </nav>
+  
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner"> 
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Precedente</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Prossima</span>
+    </button>
+  </div>
+
+  <div class="container-fluid mt-5">
+    <table class="table">
+      <tbody id="newsTableBody">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
